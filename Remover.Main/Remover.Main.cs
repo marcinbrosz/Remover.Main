@@ -10,8 +10,9 @@ namespace Remover.Main
     {
         static void Main(string[] args)
         {
-            List<int> lista = new List<int>();
-            lista = Remover.Library.Remover.RemoveSmallest(new List<int>());
+            List<int> lista = new List<int> ();
+            lista = Remover.Library.Remover.RemoveSmallest(new List<int> { 2, 2, 1, 2, 1 });
+
             lista.ForEach(Console.WriteLine);
 
             Console.WriteLine("Press enter to close...");
